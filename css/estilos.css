@@ -1,0 +1,205 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #263238;
+    background: linear-gradient(135deg, #eef6ff, #f7f1ff, #fff7ed);
+}
+
+.inicio {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 24px;
+}
+
+.tarjeta {
+    width: 100%;
+    max-width: 540px;
+    padding: 50px 44px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.94);
+    border: 1px solid #e7e5f2;
+    border-radius: 22px;
+    box-shadow: 0 14px 40px rgba(70, 70, 110, 0.12);
+}
+
+.icono {
+    margin: 0 auto 18px;
+}
+
+.icono img {
+    width: 150px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.etiqueta {
+    margin: 0 0 10px;
+    color: #6b5bb5;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.3px;
+}
+
+h1 {
+    margin: 0 0 18px;
+    color: #29304a;
+    font-size: 42px;
+    line-height: 1.1;
+}
+
+.descripcion {
+    max-width: 400px;
+    margin: 0 auto 32px;
+    color: #5b6272;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.boton-principal {
+    display: inline-block;
+    min-width: 150px;
+    padding: 15px 34px;
+    border-radius: 10px;
+    background-color: #6653b6;
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    box-shadow: 0 6px 16px rgba(102, 83, 182, 0.20);
+}
+
+.boton-principal:hover,
+.boton-principal:focus {
+    background-color: #55449f;
+}
+
+.boton-principal:focus,
+.acciones-secundarias a:focus {
+    outline: 3px solid #263238;
+    outline-offset: 4px;
+}
+
+.acciones-secundarias {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 14px;
+    color: #b4adc9;
+}
+
+.acciones-secundarias a {
+    color: #536273;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.acciones-secundarias a:hover {
+    color: #6653b6;
+    text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+    .tarjeta {
+        padding: 38px 24px;
+    }
+
+    h1 {
+        font-size: 34px;
+    }
+
+    .descripcion {
+        font-size: 17px;
+    }
+}
+
+.titulo-juego {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.titulo-juego img {
+    width: 45px;
+    height: 45px;
+    object-fit: contain;
+}
+
+/* Quitar las flechitas del campo numérico */
+#numero::-webkit-outer-spin-button,
+#numero::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.entrada-juego {
+    margin: 25px 0;
+    font-size: 18px;
+}
+
+.entrada-juego input {
+    width: 90px;
+    padding: 10px;
+    margin-left: 8px;
+    font-size: 18px;
+    text-align: center;
+    border: 1px solid #b8b5c8;
+    border-radius: 8px;
+}
+
+.entrada-juego input:focus {
+    outline: 3px solid #d8d0ff;
+    border-color: #6653b6;
+}
+
+.mensaje {
+    min-height: 28px;
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #6653b6;
+}
+
+.intentos {
+    font-size: 16px;
+    color: #536273;
+}
+
+.boton-secundario {
+    padding: 10px 20px;
+    border: 1px solid #6653b6;
+    border-radius: 8px;
+    background-color: white;
+    color: #6653b6;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.boton-secundario:hover {
+    background-color: #f1edff;
+}
+
+.volver {
+    color: #536273;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.volver:hover {
+    color: #6653b6;
+    text-decoration: underline;
+}
+
+hr {
+    border: none;
+    height: 5px;
+    background-color: #6653b6
+}

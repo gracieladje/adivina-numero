@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego - Adiviná el número</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+
+    <main class="inicio">
+
+        <section class="tarjeta">
+
+            <div class="titulo-juego">
+                <img src="numero.png" alt="">
+                <h1>Adiviná el número</h1>
+            </div>
+
+            <p class="descripcion">
+                Estoy pensando un número entre <strong>1 y 100</strong>.<br>
+                Tenés 7 intentos para descubrirlo.
+            </p>
+
+            <p class="entrada-juego">
+                <label for="numero">Ingresá un número:</label>
+                <input type="number" id="numero" min="1" max="100">
+            </p>
+
+            <p>
+                <button type="button"
+                        id="botonJugar"
+                        class="boton-principal">
+                    Adivinar
+                </button>
+            </p>
+
+            <p id="mensaje" aria-live="polite"class="mensaje"></p>
+
+            <p id="intentos" class="intentos"></p>
+
+            
+                <button type="button"
+                        id="botonReiniciar"
+                        class="boton-secundario">
+                    Jugar de nuevo
+                </button>
+           
+
+            <p>
+                <a href="index.html" class="volver">
+                    Volver al inicio
+                </a>
+            </p>
+
+        </section>
+
+    </main>
+
+    <script src="juego.js"></script>
+
+</body>
+
+</html>
